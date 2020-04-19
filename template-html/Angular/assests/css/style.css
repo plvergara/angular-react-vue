@@ -42,15 +42,21 @@ body {
   float: left;
   height: 60px;
   margin-top: -9px;
-  animation: rotate infinite 30s linear;
+  animation: throb infinite 2s linear;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+@keyframes throb {
+  0% {
+    transform: scale(1, 1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.02, 1.02);
+  }
+  55% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 
