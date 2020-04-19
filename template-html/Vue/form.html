@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Base Html</title>
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="center w-75">
+        <!--LOGO-->
+        <div id="logo">
+          <img src="assests/images/react.svg" class="app-logo" alt="logo" />
+          <span id="brand">React<strong>Course</strong></span>
+        </div>
+        <!--MENU-->
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="form.html">Contact</a>
+            </li>
+            <li>
+              <a href="/">Page 1</a>
+            </li>
+            <li>
+              <a href="/">Page 2</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </div>
+    </header>
+    <div class="center w-75">
+      <section id="content">
+        <h1>Formulario</h1>
+        <form class="mid-form center">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" />
+          </div>
+          <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea type="text" name="bio"></textarea>
+          </div>
+          <div class="form-group radio-btn">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="other" /> Other
+          </div>
+          <input type="submit" class="btn btn-info" value="Send" />
+        </form>
+      </section>
+
+      <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item">
+          <h3>Articles</h3>
+          <a href="#" class="btn btn-info">New article</a>
+        </div>
+        <div id="nav-search" class="sidebar-item">
+          <h3>Search</h3>
+          <p>Search article</p>
+          <form>
+            <input type="text" name="search" />
+            <input
+              type="submit"
+              class="btn btn-warning"
+              name="submit"
+              value="Search"
+            />
+          </form>
+        </div>
+      </aside>
+      <div class="clearfix"></div>
+    </div>
+
+    <footer id="footer">
+      <div class="center">
+        <p>
+          &copy
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          Pedro Vergara
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
