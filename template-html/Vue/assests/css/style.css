@@ -8,13 +8,17 @@ body {
   -moz-font-smoothing: antialiased;
   -moz-osx-smoothing: antialiased;
 }
+.btn-info {
+  background: #3fb984 !important;
+  border-color: #31475e !important;
+}
 
 #header {
   height: 120px;
   width: 100%;
   background: white;
   border-bottom: 1px solid #ccc;
-  border-top: 3px solid #61dafb;
+  border-top: 3px solid #3fb984;
 }
 
 .center {
@@ -42,16 +46,6 @@ body {
   float: left;
   height: 60px;
   margin-top: -9px;
-  animation: rotate infinite 30s linear;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 #brand {
@@ -88,7 +82,7 @@ body {
 }
 
 #menu a:hover {
-  color: #38a7c5;
+  color: #3fb984;
 }
 
 #slider {
@@ -96,12 +90,12 @@ body {
   height: 350px;
   color: white;
   text-shadow: 0px 0px 5px #444;
-  background: rgba(97, 218, 251, 1);
+  background: rgba(63, 185, 132, 1);
   background: -moz-radial-gradient(
     center,
     ellipse cover,
-    rgba(97, 218, 251, 1) 0%,
-    rgba(58, 183, 214, 1) 100%
+    rgba(63, 185, 132, 1) 0%,
+    rgba(49, 71, 94, 1) 100%
   );
   background: -webkit-gradient(
     radial,
@@ -109,33 +103,33 @@ body {
     0px,
     center center,
     100%,
-    color-stop(0%, rgba(97, 218, 251, 1)),
-    color-stop(100%, rgba(58, 183, 214, 1))
+    color-stop(0%, rgba(63, 185, 132, 1)),
+    color-stop(100%, rgba(49, 71, 94, 1))
   );
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
-    rgba(97, 218, 251, 1) 0%,
-    rgba(58, 183, 214, 1) 100%
+    rgba(63, 185, 132, 1) 0%,
+    rgba(49, 71, 94, 1) 100%
   );
   background: -o-radial-gradient(
     center,
     ellipse cover,
-    rgba(97, 218, 251, 1) 0%,
-    rgba(58, 183, 214, 1) 100%
+    rgba(63, 185, 132, 1) 0%,
+    rgba(49, 71, 94, 1) 100%
   );
   background: -ms-radial-gradient(
     center,
     ellipse cover,
-    rgba(97, 218, 251, 1) 0%,
-    rgba(58, 183, 214, 1) 100%
+    rgba(63, 185, 132, 1) 0%,
+    rgba(49, 71, 94, 1) 100%
   );
   background: radial-gradient(
     ellipse at center,
-    rgba(97, 218, 251, 1) 0%,
-    rgba(58, 183, 214, 1) 100%
+    rgba(63, 185, 132, 1) 0%,
+    rgba(49, 71, 94, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61dafb', endColorstr='#3ab7d6', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb984', endColorstr='#31475e', GradientType=1 );
 }
 
 #slider h1 {
@@ -306,7 +300,7 @@ textarea {
     width: auto;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 940px) {
   #logo {
     float: none;
     width: 30rem;
@@ -374,5 +368,9 @@ textarea {
   }
   #sidebar {
     width: 80%;
+  }
+  .article-item .image-wrap {
+    width: 10rem;
+    height: 10rem;
   }
 }
